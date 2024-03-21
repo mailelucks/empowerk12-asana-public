@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  empowerk12app:
+    image: empowerk12
+    env_file:
+      - ./keys/credentials.env
+    ports:
+      - '8000:8000'
+
+networks:
+  mynetwork:
+    driver: bridge
